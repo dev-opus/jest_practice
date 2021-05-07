@@ -21,3 +21,10 @@ test('should subtract two numbers correctly', () => {
   expect(calculator.subtract(1, 2)).toBe(-1);
   expect(calculator.subtract(1)).toBe('Syntax Error');
 });
+
+test('should divide two numbers correctly', () => {
+  expect(calculator.divide()).toBe('Syntax Error');
+  expect(calculator.divide(Number)).toBe('Syntax Error');
+  expect(calculator.divide(4, 2)).toBe(2);
+  expect(calculator.divide(5, 76)).toBeCloseTo(0.065789);
+});
