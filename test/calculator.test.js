@@ -10,3 +10,9 @@ test('should contain add, subtract, divide and multiply methods', () => {
 
   expect(JSON.stringify(calculator)).toEqual(JSON.stringify(calcMethods));
 });
+
+test('should add numbers currectly', () => {
+  expect(calculator.add(1)).toBe(1);
+  expect(calculator.add(1, 2)).toBe(3);
+  expect(calculator.add(1, 2, 3, 4, 5)).toBe(15);
+});
