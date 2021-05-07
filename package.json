@@ -1,0 +1,9 @@
+{
+  "name": "test_practice",
+  "version": "1.0.0",
+  "description": "learning tdd from theOdinProject",
+  "main": "app.js",
+  "author": "Victor Orlunda <vicorlunda@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
