@@ -28,3 +28,8 @@ test('should divide two numbers correctly', () => {
   expect(calculator.divide(4, 2)).toBe(2);
   expect(calculator.divide(5, 76)).toBeCloseTo(0.065789);
 });
+
+test('should multiply numbers correctly', () => {
+  expect(calculator.multiply(7, 2)).toBe(14);
+  expect(calculator.multiply(9, 6, 96, 9, 6)).toBe(279936);
+});
