@@ -20,3 +20,7 @@ test('returned obj.max should give the max value in the input array', () => {
   expect(expect(analyze([1, 2, 3, 4, 5]).max).toBe(5));
   expect(expect(analyze([1, 2, 3, 4, 5, 80.5]).max).toBe(80.5));
 });
+
+test('returned obj.min should give the min value in the input array', () => {
+  expect(expect(analyze([1, 2, 3, 4, 5]).min).toBe(1));
+});
