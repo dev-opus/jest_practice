@@ -15,3 +15,8 @@ test('returned obj.average should give the true average of the array of numbers'
   expect(analyze([1, 2, 3, 4, 5]).average).toBeCloseTo(3);
   expect(analyze([1, 2, 3, 4]).average).toBeCloseTo(2.5);
 });
+
+test('returned obj.max should give the max value in the input array', () => {
+  expect(expect(analyze([1, 2, 3, 4, 5]).max).toBe(5));
+  expect(expect(analyze([1, 2, 3, 4, 5, 80.5]).max).toBe(80.5));
+});
